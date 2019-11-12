@@ -1,0 +1,25 @@
+.logo div.img {
+    padding-left: calc(20% - 165px);
+}
+
+.offer {
+    padding-left: 20%;
+}
+
+.offer h1 {
+    padding-top: 8%;
+    padding-bottom: 4.5%;
+}
+
+.offer::before {
+    left: calc(20% - 1px);
+}
+
+.offer::after {
+    left: calc(20% + 585px);
+}
+
+.info {
+    padding-left: 20%;
+    padding-top: 6%;
+}

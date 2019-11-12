@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'Gentona-Book';
+    src: url('../fonts/gentona_book-webfont.woff2') format('woff2'),
+        url('../fonts/gentona_book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gentona-Light';
+    src: url('../fonts/gentona_light-webfont.woff2') format('woff2'),
+        url('../fonts/gentona_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('../fonts/lato-light-webfont.woff2') format('woff2'),
+        url('../fonts/lato-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: 'Gentona-Light';
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 24px;
+
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+    height: 100vh;
+}
+
+
+
+.logo div.img {
+    padding-left: calc(28% - 165px);
+    height: 172px;
+}
+
+.logo div img {
+    width: 165px;
+    height: 172px;
+}
+
+
+
+.offer {
+    padding-left: 28%;
+    position: relative;
+}
+
+.offer::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: calc(28% - 1px);
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+}
+
+.offer::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: calc(28% + 585px);
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+}
+
+.offer h1 {
+    font-family: 'Lato-Light';
+    font-size: 72px;
+    line-height: 72px;
+    /* padding-top: 88px; */
+    padding-top: 7%;
+    /* padding-bottom: 46px; */
+    padding-bottom: 3%;
+    text-transform: uppercase;
+}
+
+.offer .text {
+    display: flex;
+}
+
+.offer .text ul {
+    width: 585px;
+}
+
+li {
+    padding-left: 10px;
+    position: relative;
+}
+
+ul li:before {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    content: "\2022";
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+.offer .text p {
+    max-width: 370px;
+    position: relative;
+}
+
+.info {
+    display: flex;
+    padding-left: 28%;
+    padding-top: 84px;
+    /* padding-top: 4%; */
+}
+
+.info .data {
+    width: 585px;
+}
+
+.info .contact a {
+    font-family: 'Gentona-Book';
+    color: #36A9E1;
+    transition: 300ms;
+    text-decoration: none;
+}
+
+.info .contact a:hover {
+    font-family: 'Gentona-Book';
+    color: #9b6f8a;
+    cursor: pointer;
+}

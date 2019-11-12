@@ -1,0 +1,75 @@
+body {
+    padding: 0 25px 0 25px;
+    height: 1058px;
+    background-position: center;
+}
+
+.logo div img {
+    width: 140px;
+    height: 146px;
+    padding-left: 0;
+}
+
+.logo div.img {
+    height: 146px;
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    padding: 54px 0 0 25px;
+}
+
+.offer h1 {
+    /* font-size: 42px; */
+    padding: 0 0 50px 0;
+}
+
+.offer .text {
+    flex-direction: column;
+}
+
+.offer .text ul {
+    /* font-size: 14px; */
+    line-height: 18px;
+    width: 500px;
+}
+
+.offer .text p {
+    /* font-size: 14px; */
+    padding: 58px 0 50px 0;
+    line-height: 18px;
+    width: 500px;
+    max-width: 500%;
+}
+
+.info {
+    flex-direction: column;
+    padding: 0 0 0 25px;
+    /* font-size: 14px; */
+}
+
+.info .data {
+    line-height: 18px;
+    width: 100%;
+}
+
+.contact {
+    padding: 50px 0 90px 0;
+    line-height: 18px;
+}
+
+.offer::before {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.offer::after {
+    display: none;
+}

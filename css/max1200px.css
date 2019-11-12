@@ -1,0 +1,19 @@
+.logo div.img {
+    padding-left: 25px;
+}
+
+.offer {
+    padding-left: 25px;
+}
+
+.offer::before {
+    left: 25px;
+}
+
+.offer::after {
+    left: calc(25px + 585px);
+}
+
+.info {
+    padding-left: 25px;
+}
